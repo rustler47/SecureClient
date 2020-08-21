@@ -18,7 +18,7 @@ Future plans include storing SSL Pins to file and generating them once a week or
  
 # Example Usage
 
-## Example 1 - See [tests](https://github.com/rustler47/SecureClient/blob/master/testing/main.go)
+## Example 1 - See [tests](https://github.com/rustler47/SecureClient/blob/master/testing/compare/main.go)
 
 ## Example 2 
 ```
