@@ -59,5 +59,8 @@ func main() {
 }
 ```
 
+## Tips
+```BadPinDetected``` fires when the SSL pin is not matched, and passes in the proxy which triggered the bad connection. This is a perfect place to send a message to an API to flag the user and/or disable their key
+
 ## References
 [tam7t/hpkp](https://github.com/tam7t/hpkp/)
