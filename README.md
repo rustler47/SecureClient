@@ -12,7 +12,8 @@ Should be called on startup (**typically in main()**), and whenever a client is 
 ```
 client, err := pinner.NewClient(proxy)
 ```
-The SSL Pins only need to be generated once per program run _max_, which is done in **SecureClient.New()**
+The SSL Pins only need to be generated once per program run _max_, which is done in **SecureClient.New()**.
+
 Future plans include storing SSL Pins to file and updating them once a week or so. I'm pretty sure the pins shouldnt change for a good bit of time.
  
  
