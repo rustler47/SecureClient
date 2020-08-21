@@ -5,7 +5,14 @@
  
 This package takes in a list of hosts and provides a function to create net/http clients with SSL Pinning. 
 For best practices
-```New(hosts, requireAll, BadPinDetected)``` should be called on startup (**typically in main()**), and whenever a client is needed you may call ```NewClient(proxy)```. The SSL Pins only need to be generated once, which is done in **New()**
+```
+pinner := SecureClient.New(hosts, requireAll, BadPinDetected)
+```
+Should be called on startup (**typically in main()**), and whenever a client is needed you may call 
+```
+pinner.NewClient(proxy)
+```
+The SSL Pins only need to be generated once, which is done in **SecureClient.New()**
 Future plans include storing SSL Pins to file and generating them once a week or so.
  
  
