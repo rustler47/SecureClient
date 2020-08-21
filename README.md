@@ -10,7 +10,7 @@ pinner := SecureClient.New(hosts, requireAll, BadPinDetected)
 ```
 Should be called on startup (**typically in main()**), and whenever a client is needed you may call 
 ```
-pinner.NewClient(proxy)
+client := pinner.NewClient(proxy)
 ```
 The SSL Pins only need to be once per program run max, which is done in **SecureClient.New()**
 Future plans include storing SSL Pins to file and updating them once a week or so. I'm pretty sure the pins shouldnt change for a good bit of time.
