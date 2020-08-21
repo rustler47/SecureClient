@@ -4,7 +4,8 @@
  ## Secure the standard net/http client with **SSL pinning** to prevent users from sniffing requests with a **Man-In-The-Middle** proxy
  
 This package takes in a list of hosts and provides a function to create net/http clients with SSL Pinning. 
-For best practices, **SecureClient.New(hosts, requireAll, BadPinDetected)** should be called on startup ( typically in main() ), and whenever a client is needed you may call **NewClient(proxy)**. The SSL Pins only need to be generated once, which is done in **New()**
+For best practices
+```New(hosts, requireAll, BadPinDetected)``` should be called on startup (**typically in main()**), and whenever a client is needed you may call ```NewClient(proxy)```. The SSL Pins only need to be generated once, which is done in **New()**
 Future plans include storing SSL Pins to file and generating them once a week or so.
  
  
