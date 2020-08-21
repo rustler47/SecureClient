@@ -5,7 +5,7 @@ import (
 	"time"
 	"strings"
 	"net/http"
-	sc "AI/Common/SecureClient"
+	sc "github.com/rustler47/SecureClient"
 )
 
 

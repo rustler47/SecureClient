@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	sc "AI/Common/SecureClient"
+	sc "github.com/rustler47/SecureClient"
 )
 
 func main() {
