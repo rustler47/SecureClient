@@ -19,6 +19,12 @@ Future plans include storing SSL Pins to file and updating them once a week or s
 # Example Usage
 
 ## Example 1 - See [tests](https://github.com/rustler47/SecureClient/blob/master/testing/compare/main.go)
+Here is the output from example 1 on SNS. 
+![Example 1](https://i.gyazo.com/9af7c6873edcacf0ec1be343261cf379.png)
+The first test was done without any MITM sniffer and succeeded (unproxied, a valid connection).
+The second test was done using Postman Request interceptor (the standard proxy on **localhost:5555**)
+
+
 
 ## Example 2 
 ```
