@@ -41,7 +41,7 @@ import (
 func main() {
 	fmt.Println("SSL Pinning test\n\n")
 
-	MITMProxy  :="http://localhost:5555"
+	MITMProxy  := "http://localhost:5555"
 
 	hosts := []string{ "kith.com" }
 
